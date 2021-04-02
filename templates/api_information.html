@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+<!-- title -->
+{% block title %}Eurovision API{% endblock %}
+
+<!-- page content -->
+{% block content %}
+
+<div class="container d-flex justify-content-center my-5">
+  
+  <!-- new user form -->
+  <div class="row col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 border border-1 border-light rounded shadow-lg p-3 mt-3 mb-3">
+
+    <div class="row align-items-top justify-content-center">
+    
+        <p class="display-6">API GET Requests</p>
+        <br>
+        <br>
+        <p><b>BASE URL</b>: <a href="http://api.eurovisionapp.com">http://api.eurovisionapp.com</a></p>
+        <br>
+        <br>
+        <br>
+        <p class="display-6">Endpoints</p>
+        <ul>
+            <li><p><b>All countries</b>: /countries</p></li>
+            <li><p><b>Specific country</b>: /countries/[country id]</p></li>
+            <li><p><b>All participants</b>: /participants</p></li>
+            <li><p><b>Specific participant</b>: /participants/[participant id]</p></li>
+            <li><p><b>All entries</b>: /entries</p></li>
+            <li><p><b>Specific entry</b>: /entries/[entry id]</p></li>
+            <li><p><b>All events</b>: /events</p></li>
+            <li><p><b>Specific event</b>: /events/[event id]</p></li>
+            <li><p><b>All performances</b>: /performances</p></li>
+            <li><p><b>Specific performance</b>: /performances/[peformance id]</p></li>
+
+        </ul>
+
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block page_scripts %}{% endblock %}
